@@ -196,4 +196,7 @@ header {
 .justificar {
   text-align: justify;
 }
+.coluna p, .coluna h3 {
+  text-align: justify;
+}
   
