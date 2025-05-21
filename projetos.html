@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Projetos</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="trabalho web design css.css">
 </head>
 <body>
   <header>
     <h1>Os Nossos Projetos</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Início</a></li>
+        <li><a href="inicial.html">Início</a></li>
         <li><a href="formaçao.html">Formação</a></li>
         <li><a href="projetos.html">Projetos</a></li>
         <li><a href="competencias.html">Competências</a></li>
@@ -19,14 +19,47 @@
     </nav>
   </header>
   <main>
-    <h2>Trabalhos Desenvolvidos</h2>
-    <ul>
-      <li><strong>Site de receitas:</strong> Aplicação web com HTML, CSS e JavaScript.</li>
-      <li><strong>Jogo da memória:</strong> Jogo educativo simples feito com programação básica.</li>
-    </ul>
-  </main>
+  <h2>Galeria de Projetos</h2>
+
+ <div class="galeria">
+  <div class="projeto">
+    <img src="imagens/projeto 1.jpeg" alt="Projeto 1" onclick="abrirModal(this)">
+    <p>Site de Receitas</p>
+  </div>
+  <div class="projeto">
+    <img src="imagens/projeto2.jpg" alt="Projeto 2" onclick="abrirModal(this)">
+    <p>Jogo da Memória</p>
+  </div>
+  <div class="projeto">
+    <img src="imagens/projeto3.jpg" alt="Projeto 3" onclick="abrirModal(this)">
+    <p>Landing Page</p>
+  </div>
+  <div class="projeto">
+    <img src="imagens/projeto4.jpg" alt="Projeto 4" onclick="abrirModal(this)">
+    <p>App de Tarefas</p>
+  </div>
+</div>
+
+<!-- Modal para abrir imagens -->
+<div id="modal" class="modal" onclick="fecharModal()">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imagemModal">
+</div>
+</main>
   <footer>
     <p>&copy; 2025 Por Nós Duas</p>
   </footer>
+  <script>
+  function abrirModal(imagem) {
+    var modal = document.getElementById("modal");
+    var modalImg = document.getElementById("imagemModal");
+    modal.style.display = "block";
+    modalImg.src = imagem.src;
+  }
+
+  function fecharModal() {
+    document.getElementById("modal").style.display = "none";
+  }
+</script>
 </body>
 </html>
