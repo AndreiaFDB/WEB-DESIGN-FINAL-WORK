@@ -193,4 +193,7 @@ header {
 .btn:hover {
   background-color: #dddddd;
 }
+.justificar {
+  text-align: justify;
+}
   
