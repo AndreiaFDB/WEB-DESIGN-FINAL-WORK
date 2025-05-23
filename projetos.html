@@ -20,14 +20,16 @@
   </header>
   <main>
   <h2>Galeria de Projetos</h2>
-
+    
   <div class="galeria-2x2">
-    <!-- Linha 1 -->
     <div class="projeto">
-      <img src="imagens/projeto1.jpg" alt="Projeto 1" onclick="abrirModal(this)">
-      <h3>Site de Receitas</h3>
-      <p>Projeto em HTML e CSS para apresentar receitas culinárias.</p>
-    </div>
+  <video width="100%" controls>
+    <source src="videos/video1.mp4" type="video/mp4">
+    O seu navegador não suporta vídeos em HTML5.
+  </video>
+  <h3>Animação 3D de uma Caneca</h3>
+  <p>Este vídeo mostra o meu projeto num estágio em Espanha.</p>
+</div>
 
     <div class="projeto">
       <img src="imagens/projeto2.jpg" alt="Projeto 2" onclick="abrirModal(this)">
@@ -35,12 +37,29 @@
       <p>Jogo feito com JavaScript para treinar a memória do utilizador.</p>
     </div>
 
-    <!-- Linha 2 -->
+   <div class="projeto">
+  <video width="100%" controls>
+    <source src="videos/video2.mp4" type="video/mp4">
+    O seu navegador não suporta vídeos em HTML5.
+  </video>
+  <h3>Animação de um Logotipo</h3>
+  <p>Este vídeo mostra uma animação que realizei no Adobe After Effects.</p>
+</div>
+
     <div class="projeto">
-      <img src="imagens/projeto3.jpg" alt="Projeto 3" onclick="abrirModal(this)">
-      <h3>Landing Page</h3>
-      <p>Design de uma página única para apresentação pessoal.</p>
+      <img src="imagens/projeto4.jpg" alt="Projeto 4" onclick="abrirModal(this)">
+      <h3>App de Tarefas</h3>
+      <p>Aplicação simples para organizar tarefas do dia a dia.</p>
     </div>
+
+     <div class="projeto">
+  <video width="100%" controls>
+    <source src="videos/video3.mp4" type="video/mp4">
+    O seu navegador não suporta vídeos em HTML5.
+  </video>
+  <h3>Mostra de Estampagem</h3>
+  <p>Este vídeo mostra exemplos de estampagem que a loja fazia.</p>
+</div>
 
     <div class="projeto">
       <img src="imagens/projeto4.jpg" alt="Projeto 4" onclick="abrirModal(this)">
@@ -48,7 +67,6 @@
       <p>Aplicação simples para organizar tarefas do dia a dia.</p>
     </div>
   </div>
-<!-- Modal para abrir imagens -->
 <div id="modal" class="modal" onclick="fecharModal()">
   <span class="fechar">&times;</span>
   <img class="modal-conteudo" id="imagemModal">
