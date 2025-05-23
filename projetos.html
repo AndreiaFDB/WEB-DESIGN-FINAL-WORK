@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Projetos</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="trabalho web design css.css">
 </head>
 <body>
   <header>
     <h1>Os Nossos Projetos</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Início</a></li>
+        <li><a href="inicial.html">Início</a></li>
         <li><a href="formaçao.html">Formação</a></li>
         <li><a href="projetos.html">Projetos</a></li>
         <li><a href="competencias.html">Competências</a></li>
@@ -19,14 +19,55 @@
     </nav>
   </header>
   <main>
-    <h2>Trabalhos Desenvolvidos</h2>
-    <ul>
-      <li><strong>Site de receitas:</strong> Aplicação web com HTML, CSS e JavaScript.</li>
-      <li><strong>Jogo da memória:</strong> Jogo educativo simples feito com programação básica.</li>
-    </ul>
-  </main>
+  <h2>Galeria de Projetos</h2>
+
+  <div class="galeria-2x2">
+    <!-- Linha 1 -->
+    <div class="projeto">
+      <img src="imagens/projeto1.jpg" alt="Projeto 1" onclick="abrirModal(this)">
+      <h3>Site de Receitas</h3>
+      <p>Projeto em HTML e CSS para apresentar receitas culinárias.</p>
+    </div>
+
+    <div class="projeto">
+      <img src="imagens/projeto2.jpg" alt="Projeto 2" onclick="abrirModal(this)">
+      <h3>Jogo da Memória</h3>
+      <p>Jogo feito com JavaScript para treinar a memória do utilizador.</p>
+    </div>
+
+    <!-- Linha 2 -->
+    <div class="projeto">
+      <img src="imagens/projeto3.jpg" alt="Projeto 3" onclick="abrirModal(this)">
+      <h3>Landing Page</h3>
+      <p>Design de uma página única para apresentação pessoal.</p>
+    </div>
+
+    <div class="projeto">
+      <img src="imagens/projeto4.jpg" alt="Projeto 4" onclick="abrirModal(this)">
+      <h3>App de Tarefas</h3>
+      <p>Aplicação simples para organizar tarefas do dia a dia.</p>
+    </div>
+  </div>
+<!-- Modal para abrir imagens -->
+<div id="modal" class="modal" onclick="fecharModal()">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imagemModal">
+</div>
+</main>
   <footer>
-    <p>&copy; 2025 Por Nós Duas</p>
+    <p>&copy; 2025 Andreia Barata e Gonçalo Lopes</p>
   </footer>
+  <script>
+  function abrirModal(imagem) {
+    var modal = document.getElementById("modal");
+    var modalImg = document.getElementById("imagemModal");
+    modal.style.display = "block";
+    modalImg.src = imagem.src;
+  }
+
+  function fecharModal() {
+    document.getElementById("modal").style.display = "none";
+  }
+</script>
 </body>
 </html>
